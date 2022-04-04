@@ -1,0 +1,388 @@
+/*---------------------------------------------------------------------------------------------
+*  Global styles
+*---------------------------------------------------------------------------------------------*/
+html{
+    overflow-y: scroll; 
+}
+.DBR-margin-r-300{
+	margin-top:10px;
+	margin-right:260px;
+}
+.DBR-float-left{
+	float:left;
+}
+.DBR-float-right{
+	float:right;
+}
+.DBR-button-reset{
+	width:150px !important;
+	height:40px !important;
+	text-align:center;
+}
+.DBR-path-style{
+	color:#000;
+	background:#e9e9e9;
+	padding:1px 3px;
+	
+}
+
+/*---------------------------------------------------------------------------------------------
+*  Tabs
+*---------------------------------------------------------------------------------------------*/
+.DBR-tab-box{
+	float:left;
+	width:100%;	
+	overflow:hidden;
+}
+.DBR-tab-box a{
+	float:left;
+	background:none;
+	border:none;
+	outline:none;
+	cursor:pointer;
+	padding:14px;
+	font-size:14px;
+	font-weight:600;
+	border-top:3px solid transparent;
+}
+.DBR-tab-box a:hover{
+	color:#024f72;
+}
+/* Create an active/current tablink class */
+.DBR-tab-box a.active{
+	border-top:3px solid #0073aa;
+	background:#fff;
+}
+.DBR-tab-box-div{
+	clear:both;
+	min-height:400px;
+	background:#fff;
+	padding:35px 25px;
+}
+
+/*---------------------------------------------------------------------------------------------
+*  Sidebar
+*---------------------------------------------------------------------------------------------*/
+.DBR-sidebar{
+	float:right;
+	border:1px solid #ccc;
+	background:#fff;
+	margin-right:-260px;
+	width:240px;
+    border-radius:5px 5px 0 0;
+    -moz-border-radius:5px 5px 0 0;
+    -webkit-border-radius:5px 5px 0 0;
+}
+.DBR-sidebar > div{
+	padding:15px;
+}
+.DBR-sidebar h2{
+	font-size:16px;
+	text-align:center;
+	color:#888;
+	line-height:24px;
+}
+.DBR-grey-row{
+	height:20px;
+	background-color:#fff;
+}
+.DBR-white-row{
+	height:20px;
+	background-color:#fff;
+}
+.DBR-row-text{
+	font-size:13px;
+	color:#555;
+}
+.DBR-sidebar-link{
+	text-decoration:none;
+}
+.DBR-support-us{
+	background:url("../images/rate.png") no-repeat center right;
+	width:88px;
+	height:18px;
+	margin-top:0px;
+}
+
+/*---------------------------------------------------------------------------------------------
+*  Box messages
+*---------------------------------------------------------------------------------------------*/
+.DBR-box-warning{
+	background: #fff7db;
+    border:1px dashed #FFB900;
+    color:#404040;
+    padding:10px 10px 10px 10px;
+	margin-bottom:20px;
+	border-radius: 4px;
+}
+.DBR-box-info{
+    border-bottom:1px dashed #ccc;
+    color:#404040;
+    padding:10px 10px 10px 10px;
+	margin-bottom:20px;
+}
+
+/*---------------------------------------------------------------------------------------------
+*  Tool tip for info
+*---------------------------------------------------------------------------------------------*/
+span.DBR-tooltips-headers {
+  position: relative;
+  display: inline;
+  cursor: pointer;
+  color: #000;  
+}
+span.DBR-tooltips-headers span {
+  position: absolute;
+  text-align: left;
+  line-height: 22px;
+  color: #fff;
+  background: #555;
+  opacity: 1 !important;
+  font-size: 13px;
+  font-weight: normal;
+  padding: 10px;
+  visibility: hidden;
+  width: 240px;
+  border: 1px solid #222;
+  border-radius: 4px;
+  -moz-border-radius: 4px;
+  -webkit-border-radius: 4px;
+}
+span.DBR-tooltips-headers span:after {
+  content: '';
+  position: absolute;
+  top: 18px;
+  right: 100%;
+  margin-top: -8px;
+  width: 0; 
+  height: 0;
+  border-right: 8px solid #555;
+  border-top: 8px solid transparent;
+  border-bottom: 8px solid transparent;
+}
+span:hover.DBR-tooltips-headers span {
+  visibility: visible;
+  left: 100%;
+  top: 50%;
+  margin-top: -18px;
+  margin-left: 8px;
+  z-index: 999;
+}
+.DBR-info-image {
+	width: 15px;
+	vertical-align: middle;
+	margin-left: 2px;
+	margin-bottom: 4px;
+}
+
+/*---------------------------------------------------------------------------------------------
+*  'Custom reset' tab css
+*---------------------------------------------------------------------------------------------*/
+.DBR-header-box-msg{
+	margin-bottom:40px;
+	padding:30px;
+	background:#f0f5fa;
+	border:1px solid #ccc;
+	border-radius:5px;
+}
+.DBR-sortable-highlight{
+	border:2px dashed #999;
+	height:50px;
+}
+.DBR-custom-reset-table{
+	border-collapse: collapse;
+	margin-bottom:30px;
+	border: 1px solid #f0f0f0 !important;
+}
+.DBR-item-to-reset-title{
+	cursor:pointer;
+	font-weight:600;
+}
+.DBR-item-to-reset-exclude{
+	font-size:12px;
+	color:grey;
+}
+.DBR-table-header-title{
+	background:#fff;
+	padding:15px 0px;
+	font-size:14px;
+	vertical-align:top;
+	border-bottom:2px solid #e9e9e9;
+}
+.DBR-item-to-reset-total{
+	color:grey;
+}
+.DBR-dashicons-warning{
+	color:#EB7F63;
+	font-size:18px;
+	margin-right:2px;
+	vertical-align:middle;
+}
+.DBR-deselect-all{
+	width:75px;
+	cursor:pointer;
+	margin-bottom:10px;
+	color:#0073aa;
+	font-weight:600;
+	display:none;
+}
+.DBR_tabcontent {
+	display:none;
+}
+.DBR-accordion{
+	float:right;
+	cursor:pointer;
+	border:1px solid #ccc;
+	border-radius:4px;
+}
+.DBR-spinning-checkbox{
+	vertical-align:middle;
+	width:22px;
+	display:none;
+}
+.DBR-reorder-tables{
+	float:right;
+	padding-top:10px;
+	cursor:pointer;
+}
+.DBR-save-order-tables{
+	float:right;
+	color:#fff;
+	padding:8px;
+	border-radius:3px;
+	cursor:pointer;
+	background:#2BC48A;
+	display:none;
+}
+.DBR-collapse-expand-all-tables{
+	float:right;
+	padding-top:10px;	
+	cursor:pointer;
+}
+.DBR-hor-divider{
+	padding-left:10px;
+	padding-right:10px;
+	color:grey;
+	cursor:default;
+}
+.DBR-save-order-tables:hover{
+	background:#1ab278;
+}
+.DBR-order-li-element{
+	list-style-type:none;
+}
+.DBR-only-in-mobile{
+	display:none !important;
+}
+.DBR-only-in-desktop{
+	display:inline-block !important;
+}
+.DBR-custom-reset-button{
+	border:1px solid grey !important;
+	padding:5px 12px !important;
+	font-weight:600 !important;
+	border-radius:16px !important;
+	vertical-align:bottom !important;
+}
+
+/*---------------------------------------------------------------------------------------------
+*  Override css of WP tables
+*---------------------------------------------------------------------------------------------*/
+
+.widefat tr.DBR-custom-reset-tr{
+    background:#f5f5f5;
+	border-bottom:2px solid #fff;
+}
+.widefat tr.DBR-custom-reset-tr:hover{
+    background:#e5e5e5;
+}
+.widefat th{
+    vertical-align:top !important;
+}
+.widefat td{
+	padding:10px 10px;
+    vertical-align:top !important;
+	color:#111 !important;
+	min-height:51px !important;
+}
+
+/*---------------------------------------------------------------------------------------------
+*  ON/OFF switch - the box around the slider
+*---------------------------------------------------------------------------------------------*/
+.DBR-switch{
+  position:relative;
+  display:inline-block;
+  width:25px;
+  height:15px;
+}
+.DBR-switch input{ 
+  opacity:0;
+  width:0;
+  height:0;
+}
+.DBR-slider{
+  position:absolute;
+  cursor:pointer;
+  top:0;
+  left:0;
+  right:0;
+  bottom:0;
+  background-color:#ccc;
+  -webkit-transition:.4s;
+  transition:.4s;
+}
+.DBR-slider:before{
+  position:absolute;
+  content:"";
+  height:13px;
+  width:13px;
+  left:1px;
+  bottom:1px;
+  background-color:white;
+  -webkit-transition:.4s;
+  transition:.4s;
+}
+input:checked + .DBR-slider{
+  background-color:green;
+}
+input:checked + .DBR-slider:before{
+  -webkit-transform:translateX(10px);
+  -ms-transform:translateX(10px);
+  transform:translateX(10px);
+}
+/* Rounded sliders */
+.DBR-slider.round{
+  border-radius:34px;
+}
+.DBR-slider.round:before{
+  border-radius:50%;
+}
+
+/*---------------------------------------------------------------------------------------------
+*  Style for mobile
+*---------------------------------------------------------------------------------------------*/
+@media only screen and (max-width: 600px){
+	.DBR-only-in-mobile{
+		display:inline-block !important;
+	}
+	.DBR-only-in-desktop{
+		display:none !important;
+	}
+	.DBR-margin-r-300{
+		margin-top:10px;
+		margin-right:0px;
+	}
+	.DBR-sidebar {
+		clear:both;
+		border:1px solid #ccc;
+		background:#fff;
+		margin:0px;
+		width:100%;
+		border-radius:0px;
+		-moz-border-radius:0px;
+		-webkit-border-radius:0px;
+	}
+	span.DBR-tooltips-headers span {
+		width: 150px;
+	}
+}
